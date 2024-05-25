@@ -1,0 +1,55 @@
+body {
+  background-color: #f7ecde !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.bookmark-container {
+  border-top: 2px dotted;
+  border-bottom: 2px dotted;
+}
+
+h2 {
+    font-weight: bold !important;
+    background: linear-gradient(90deg, #055a08, #d9ec2f); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h1 {
+  position: relative;
+  z-index: 100;
+  font-family: "Pacifico", cursive;
+  font-size: 50px !important;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+h1::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fec260;
+  height: 40%;
+  z-index: -1;
+  transition: height 0.2s ease-in;
+}
+
+h1:hover::after {
+  height: 60%;
+  font-size: 70px !important;
+}
+
+#visit {
+  background-color: #a3bd24 !important;
+}
+
+#visit:hover {
+  background-color: #8a9e23 !important;
+}
